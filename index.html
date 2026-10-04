@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Uniform shop - Sheet</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Uniform shop</h1>
+    <nav><a href="index.html">Sheet</a><a href="till.html">Till</a><a href="who.html">Who is in</a></nav>
+  </header>
+  <main>
+    <h2>Sheet</h2>
+    <table>
+      <thead>
+        <tr><th>Item</th><th>Quantity</th><th>Price</th><th>Line</th><th>Note</th></tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <div class="result">
+      <p>Total: <span id="total">0</span></p>
+      <p>Kind of total: <span id="total-kind">number</span></p>
+      <p>Kind of last Note: <span id="note-kind">-</span></p>
+      <p>Price text == price number: <span id="price-match">-</span></p>
+      <p>Price text === price number: <span id="price-same-kind">-</span></p>
+      <p id="nan-kind-line"></p>
+    </div>
+    <form id="sheet-form">
+      <label>Item <input id="item" type="text"></label>
+      <label>Quantity <input id="quantity" type="text"></label>
+      <label>Price <input id="price" type="text"></label>
+      <button type="submit">Add</button>
+    </form>
+  </main>
+  <footer>Roll 247209</footer>
+  <script src="sheet.js"></script>
+</body>
+</html>
