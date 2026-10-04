@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Uniform shop - Who is in</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Uniform shop</h1>
+    <nav><a href="index.html">Sheet</a><a href="till.html">Till</a><a href="who.html">Who is in</a></nav>
+  </header>
+  <main>
+    <h2>Who is in the shop</h2>
+    <form id="people-form">
+      <label>Name <input id="person-name" type="text"></label>
+      <button id="here" type="button">Here</button>
+      <button id="out" type="button">Out</button>
+    </form>
+    <table>
+      <thead><tr><th>Name</th><th>In shop</th></tr></thead>
+      <tbody id="people"></tbody>
+    </table>
+    <div class="result">People in shop: <span id="count">0</span></div>
+  </main>
+  <footer>Roll 247209</footer>
+  <script src="who.js"></script>
+</body>
+</html>
